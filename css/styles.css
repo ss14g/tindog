@@ -24,7 +24,7 @@ h3{
 }
 
 .container-fluid{
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 body{
@@ -66,6 +66,11 @@ padding: 5%;
   color: #8f8f8f
 }
 
+#features{
+  background-color: white;
+  position: relative;
+}
+
 /* Download Buttons */
 
 .download-button{
@@ -77,7 +82,8 @@ padding: 5%;
 .rotate{
   transform: rotate(25deg);
   width: 60%;
-  margin: 0 20% 10%;
+  right: 20%;
+  position: absolute;
 }
 
 /* Font Awesome Features */
@@ -132,4 +138,46 @@ padding: 5%;
 
 .pricing-col{
   padding: 3% 2%;
+}
+
+@media (max-width: 1028px) {
+
+  #title{
+    text-align: center;
+  }
+
+  .rotate{
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+/* CTA and Footer */
+
+#cta{
+  text-align: center;
+  background-color: #ff4c68;
+  color: white;
+}
+
+.cta-h3{
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:900;
+  padding: 5% 25% 0;
+  line-height: 1.5;
+}
+
+#footer{
+  background-color: white;
+  text-align: center;
+  padding: 5% 0;
+}
+
+.footer-icons{
+  margin: 20px 10px;
+}
+
+.cta-btn{
+  margin: 3% 10px 7%;
 }
